@@ -1,0 +1,50 @@
+<!DOCTYPE />
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Marcela Amorim" />
+    <meta name="author" content="Guilherme Kojima" />
+    <title>Vendedor de ticket</title>
+  </head>
+  <body>
+    <h1>Vendedor</h1>
+    <p>Clique no botão para realizar a compara do bilhete</p>
+    <div>
+      <button onclick="agenteMetro()">Validar compra</button>
+    </div>
+    <script>
+      function randonInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+
+      function agenteMetro() {
+        let custoBilhete = randonInt(5, 10);
+        let quantiaIntroduzida = prompt(
+          "Digite o valor do pagamento recebido: "
+        );
+        let retorno = "";
+
+        if (custoBilhete == quantiaIntroduzida) {
+          retorno = "Quantia correta, obrigada!";
+          console.log("Valor do bilhete: ", custoBilhete);
+          console.log(retorno);
+        }
+        if (custoBilhete > quantiaIntroduzida) {
+          retorno =
+            "Quantia insuficiente, falta: " +
+            (custoBilhete - quantiaIntroduzida); 
+          console.log(retorno);
+          console.log("Valor do bilhete: ", custoBilhete);
+        }
+
+        if (custoBilhete < quantiaIntroduzida) {
+          retorno = "O troco é: " + (quantiaIntroduzida - custoBilhete);
+          console.log(retorno);
+          console.log("Valor do bilhete: ", custoBilhete);
+        }
+      }
+    </script>
+  </body>
+</html>
