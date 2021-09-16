@@ -1,0 +1,56 @@
+<!DOCTYPE />
+<html>
+  <head>
+    <title>Árvore de Decisão</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Marcela Amorim" />
+    <meta name="author" content="Guilherme Kojima" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h2 class="display-2">Árvore de decisão - Algoritmo</h2>
+        <p>Pense em um filme e descubra sua categoria</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <form class="row">
+        <div class="form-group col-md-3">
+          <label for="divida">Gênero</label>
+          <select class="form-control" id="g">
+            <option>Gênero de ficção</option>
+            <option>Gênero reflexivo</option>
+            <option>Gênero de comédia</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-8">
+          <label for="garantia">Temática</label>
+          <select class="form-control" id="t">
+            <option>Temática de acontecimentos históricos reais</option>
+            <option>Temática envolvente em conflitos de sentimentos</option>
+            <option>Temática de histórias de pessoas reais</option>
+            <option>Casal apaixonado como protagonistas</option>
+            <option>Humor ácido</option>
+            <option>Temas relacionados a ciência e sociedade no futuro</option>
+            <option>Elementos mágicos ou sobrenaturais</option>
+          </select>
+        </div>
+      </form>
+      <div class="">
+        <a href="javascript:;" class="btn btn-primary" onclick="buscar()"
+          >verificar</a
+        >
+      </div>
+
+      <h3>Categoria: <span id="conclusao">?</span></h3>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/underscore.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
