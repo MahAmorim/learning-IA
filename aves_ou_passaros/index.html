@@ -1,0 +1,53 @@
+<!DOCTYPE />
+<html>
+  <head>
+    <title>Árvore de Decisão</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Marcela Amorim" />
+    <meta name="author" content="Guilherme Kojima" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h2 class="display-2">Árvore de decisão - Algoritmo</h2>
+        <p>Pense em uma ave e descubra se é um pássaro ou não</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <form class="row">
+        <div class="form-group col-md-3">
+          <label for="divida">Disposição dos Dedos</label>
+          <select class="form-control" id="dd">
+            <option>Anisodáctilo</option>
+            <option>Zigodáctilo</option>
+            <option>Heterodáctilo</option>
+            <option>Pamprodáctilo</option>
+            <option>Perissodáctilos</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-3">
+          <label for="garantia">Habilidades Sonoras</label>
+          <select class="form-control" id="hs">
+            <option>Canto</option>
+            <option>Nenhuma</option>
+          </select>
+        </div>
+      </form>
+      <div class="">
+        <a href="javascript:;" class="btn btn-primary" onclick="buscar()"
+          >verificar</a
+        >
+      </div>
+
+      <h3>Conclusão: <span id="conclusao">?</span></h3>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/underscore.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
